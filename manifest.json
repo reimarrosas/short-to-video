@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Short to Video",
+  "version": "1.0",
+
+  "description": "A simple extension that redirect shorts to the normal youtube video format.",
+
+  "icons": {
+    "48": "icons/short-to-video-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["short-to-video.js"]
+    }
+  ]
+}
+
